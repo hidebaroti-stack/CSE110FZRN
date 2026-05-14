@@ -1,6 +1,6 @@
 import java.util.Scanner;
 class SampleReadInput{
-    public static void main (String[] args){
+    public static void main (String[] args){ //Program Starting Point
         Scanner input = new Scanner (System.in);
         System.out.print("Enter your name: ");
         String name = input.nextLine();
