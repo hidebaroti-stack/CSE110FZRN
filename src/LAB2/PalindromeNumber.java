@@ -2,11 +2,8 @@ package LAB2;
 
 import java.util.Scanner;
 
-public class ReverseNumber {
-    /* 03: Write a Java program that prompts the user to enter a positive integer, then uses a do-while loop to reverse the digits of the number.
-    Finally, display the reversed number.
-    Enter a number:1234
-    Reverse of a number:4321 */
+public class PalindromeNumber {
+    //04: Write a Java program that prompts the user to enter a number and displays whether the number is a palindrome or not.
     static void main() {
 
         Scanner scanner = new Scanner(System.in);
@@ -16,14 +13,17 @@ public class ReverseNumber {
 
         int reverse = 0;
         int digit;
+        int originalNumber = integer;
 
-        do {
+        while (integer != 0) {
             digit = integer % 10;
             reverse = (reverse * 10) + digit;
             integer /= 10;
         }
-        while (integer != 0);
 
-        System.out.println("Reverse number: " + reverse);
+        if (originalNumber == reverse) System.out.println("Palindrome Number.");
+        else System.out.println("Not a Palindrome Number.");
+
     }
+
 }
